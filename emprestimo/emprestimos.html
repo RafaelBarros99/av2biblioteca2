@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Primeiro Exemplo com o uso de JavaScript</title>
+    <style>
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      input[type="submit"],
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      button {
+        background-color: #f44336;
+      }
+      input[type="submit"]:hover,
+      button:hover {
+        background-color: #3e8e41;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #4caf50;
+        color: #fff;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <header>
+      <h1>
+        Cadastro de Emprestimos
+      </h1>
+    </header>
+    <main>
+      <div><label for="tfCodigo">Código:</label><input type="text" id="tfCodigo" /></div>
+      <div><label for="tfDataEmprestimo">Data de Emprestimo:</label><input type="text" id="tfDataEmprestimo" /></div> 
+      <div><label for="tfDataRetorno">Data de Retorno:</label><input type="text" id="tfDataRetorno" /></div>
+      <div><label for="clCpf">Responsável:</label><input type="text" id="clCpf"/></div>
+      <div><label for="lvId">Livros:</label><input type="text" id="lvId"/></div>
+        <nav>
+          <div id="divNavegar">
+            <button id="btPrimeiro">
+              Primeiro
+            </button>
+            <button id="btAnterior">
+              Anterior
+            </button>
+            <button id="btProximo">
+              Próximo
+            </button>
+            <button id="btUltimo">
+              Último
+            </button>
+          </div>
+          <div id="divComandos">
+            <button id="btIncluir">
+              Incluir
+            </button>
+            <button id="btAlterar">
+              Alterar
+            </button>
+            <button id="btExcluir">
+              Excluir
+            </button>
+            <button id="btSair" onclick="window.location.href = '/init.html'">
+              Sair
+            </button>
+          </div>
+          <div id="divAviso">
+          </div>
+          <div id="divDialogo" hidden>
+            <button id="btOk">
+              Ok
+            </button>
+            <button id="btCancelar">
+              Cancelar
+            </button>
+          </div>
+        </nav>
+    </main>
+    <footer>
+      
+    </footer>
+  </body>
+    <script type="module" src="/CtrlSessao.js"></script>
+</html>

@@ -1,0 +1,37 @@
+{
+  "background_color": "#ffffff",
+  "description": "A simple Node app built with Fastify, instantly up and running.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Av2biblioteca",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Av2biblioteca",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [
+    "books"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "https://cdn.glitch.me/project-avatar/e15f1b55-389a-443e-8176-986a1e15bca1.png?2023-04-18T21:47:42.351Z",
+      "type": "image/png",
+      "sizes": "200x200"
+    },
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon"
+    }
+  ],
+  "shortcuts": []
+}
